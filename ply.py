@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import requests
 import json
 import random
-
-items = list(range(1, 100, 1))
+n = int(input("Cantidad de items:"))
+items = list(range(1, n, 1))
 costo = []
 print(items)
 for it in items:
