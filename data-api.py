@@ -10,4 +10,6 @@ def obtener_datos():
 if __name__ == "__main__":
     datos = obtener_datos()
     print(datos)
+    monedas = datos.get("conversion_rates")
+    print(monedas)
     
