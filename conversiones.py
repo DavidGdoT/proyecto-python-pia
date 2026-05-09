@@ -5,7 +5,7 @@ datos = obtener_datos()
 monedas = datos.get('conversion_rates')
 lista_mon = []
 mon_values = []
-
+#Tratar de crearla como una función aparte
 while True:
     mon = str(input('nombre de abreviado de la moneda (escribe "stop" para terminar) '))
     if mon == 'stop':
