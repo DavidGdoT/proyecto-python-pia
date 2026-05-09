@@ -23,7 +23,7 @@ while True:
     
 for nombre in lista_mon:
     mon_values.append(monedas.get(nombre))
-    print('1 USD =', monedas.get(nombre), nombre)
+    print('1', datos.get('base_code'),'=', monedas.get(nombre), nombre)
     
 #para texto más extenso crear una bibloteca con las moendas elegidas
 plt.plot(lista_mon, mon_values, marker="p")
