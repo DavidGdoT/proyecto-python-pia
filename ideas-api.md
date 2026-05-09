@@ -1,3 +1,5 @@
-**Conversor de monedas en tiempo real** (Agregar cambios historicos en gráficas) ExchangeRate API https://v6.exchangerate-api.com/v6/b6d737f0e4b316d91afd4e28/latest/USD (conversion de monedas con base al dolar)
-**Seguimiento de vuelos** (Ver vuelos en vivo, retrasos, rutas) Aviationstack API
-**Traductor simple** (Añadir detector de idiomas) LibreTranslate API
+*-Crear un menú al principio*
+*-Dar a elegir la base que se quiere usar en el codigo*
+ hacer de alguna manera un conficional para elegir la base donde solo se puedan escoger las monedas existentes
+*-En conversiones.py tratar se separar el ciclo while en una función al igual que la grafica*
+*-En el link del api se puede cambiar las ultimas palabras para poder eleguir la base en monedas para codigo*
