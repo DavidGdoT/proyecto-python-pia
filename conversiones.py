@@ -1,12 +1,15 @@
 import base_mon
 import matplotlib.pyplot as plt
 
-datos = base_mon.base_alterada()
-monedas = datos.get('conversion_rates')
+def conseguir_datos():
+    datos = base_mon.base_alterada()
+    monedas = datos.get('conversion_rates')
+    return monedas, datos
+
 lista_mon = []
 mon_values = []
 
-def monedas_elegidas():
+def monedas_elegidas(monedas):
     while True:
         mon = str(input('nombre de abreviado de la moneda (escribe "stop" para terminar) ')).upper()
         if mon == 'STOP':
@@ -23,12 +26,12 @@ def monedas_elegidas():
                 print("moneda no existente")
     return lista_mon
 
-def imprimir_conversiones():
+def imprimir_conversiones(monedas, datos):
     for nombre in lista_mon:
         mon_values.append(monedas.get(nombre))
         print('1', datos.get('base_code'),'=', monedas.get(nombre), nombre)
     return mon_values
 
-def grafica_mon():
+def grafica_mon(lista_mon, mon_values):
     plt.plot(lista_mon, mon_values, marker="p")
     plt.savefig("con.png")
