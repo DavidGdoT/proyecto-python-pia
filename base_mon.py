@@ -13,7 +13,7 @@ def verificador():
         if b not in nombres_monedas():
             print('base no valida')
         else:
-            print('base a utilizar: '+str(b))
+            print('base a utilizar en las conversiones: '+str(b))
             break
     return b
 
