@@ -21,7 +21,6 @@ def monedas_elegidas():
                 lista_mon.append(mon)
             else:
                 print("moneda no existente")
-    print(lista_mon)
     return lista_mon
 
 def imprimir_conversiones():
@@ -29,7 +28,7 @@ def imprimir_conversiones():
         mon_values.append(monedas.get(nombre))
         print('1', datos.get('base_code'),'=', monedas.get(nombre), nombre)
     return mon_values
-    
-#para texto más extenso crear una bibloteca con las moendas elegidas
-plt.plot(lista_mon, mon_values, marker="p")
-plt.savefig("con.png")
+
+def grafica_mon():
+    plt.plot(lista_mon, mon_values, marker="p")
+    plt.savefig("con.png")
