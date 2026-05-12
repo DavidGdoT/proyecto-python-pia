@@ -11,26 +11,29 @@ mon_values = []
 
 def monedas_elegidas(monedas):
     while True:
-        mon = str(input('nombre de abreviado de la moneda (escribe "stop" para terminar) ')).upper()
+        mon = str(input('Nombre de abreviado de la moneda (escribe "Stop" para terminar) ')).upper()
         if mon == 'STOP':
             if len(lista_mon) == 0:
-               print('agregar monedas')
+               print('Agregar monedas')
             else:
                break
         elif mon in lista_mon:
-            print('moneda ya agregada')
+            print('Moneda ya agregada')
         elif mon not in lista_mon:
             if mon in monedas.keys():
                 lista_mon.append(mon)
             else:
-                print("moneda no existente")
+                print("Moneda no existente")
     return lista_mon
+
+def datos_conversiones(monedas, datos):
+    for nombre in lista_mon:
+        mon_values.append(monedas.get(nombre))
+    return mon_values
 
 def imprimir_conversiones(monedas, datos):
     for nombre in lista_mon:
-        mon_values.append(monedas.get(nombre))
         print('1', datos.get('base_code'),'=', monedas.get(nombre), nombre)
-    return mon_values
 
 def grafica_mon(lista_mon, mon_values):
     plt.plot(lista_mon, mon_values, marker="p")
