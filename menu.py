@@ -33,7 +33,7 @@ def menu_introducir_monedas(monedas, datos, lista_mon):
             while True:
                 opcion_02 = str(input("""
                 ------------------------------------
-                (1) Comparar moendas elegidas
+                (1) Comparar monedas elegidas
                 (2) Comparar todas las monedas
                 (3) Retroceder
                 ------------------------------------
