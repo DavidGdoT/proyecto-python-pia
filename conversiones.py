@@ -37,4 +37,4 @@ def imprimir_conversiones(monedas, datos):
 
 def grafica_mon(lista_mon, mon_values):
     plt.plot(lista_mon, mon_values, marker="p")
-    plt.savefig("con.png")
+    plt.savefig("grafica_cpnversiones.png")
