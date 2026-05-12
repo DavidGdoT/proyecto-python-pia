@@ -7,6 +7,3 @@ def obtener_datos():
     data = json.loads(reponse.text)
     return data
     
-if __name__ == "__main__":
-    datos = obtener_datos()
-    monedas = datos.get("conversion_rates")
