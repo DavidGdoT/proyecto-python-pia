@@ -9,11 +9,11 @@ def nombres_monedas():
 def verificador():
     while True:
         #imprimir una lista con los valores que se puedan elegir
-        b = str(input('eligue una base: ')).upper()
+        b = str(input('Eligue una base: ')).upper()
         if b not in nombres_monedas():
-            print('base no valida')
+            print('Base no valida')
         else:
-            print('base a utilizar en las conversiones: '+str(b))
+            print('Base a utilizar en las conversiones: '+str(b))
             break
     return b
 
