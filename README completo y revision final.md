@@ -4,6 +4,11 @@
 ## Equipo 6
 David Guajardo Treviño
 
+## Documentos
+api_conexiones.py ---> data_api.py
+procesamiento.py ---> conversiones.py
+graficas.py ---> graficas.py
+main.py ---> main.py 
 
 ## ¿Qué hace este proyecto? 
 Despliega un menú con diferentes opciónes, dejando al usuario elegir las monedas que quiera para sacar su conversión a otras monendas de todos los paises y con la posibilidad de generar graficas para tener una comparación visual de la diferencia en cuanto valor
