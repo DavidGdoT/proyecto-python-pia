@@ -1,5 +1,4 @@
 import base_mon
-import matplotlib.pyplot as plt
 
 def conseguir_datos():
     datos = base_mon.base_alterada()
@@ -34,7 +33,3 @@ def datos_conversiones(monedas, datos):
 def imprimir_conversiones(monedas, datos):
     for nombre in lista_mon:
         print('1', datos.get('base_code'),'=', monedas.get(nombre), nombre)
-
-def grafica_mon(lista_mon, mon_values):
-    plt.plot(lista_mon, mon_values, marker="p")
-    plt.savefig("grafica_cpnversiones.png")
