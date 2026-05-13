@@ -4,9 +4,33 @@ import graficas
 def menu():
     print("------------¡Bienvenido!------------\nEsta aplicación calcula la conversión\nde todas las monedas del mundo.\n-----------------------------------")
     monedas,datos = con.conseguir_datos()
-    
     print("-----------------------------------")
     menu_inicio(monedas, datos)
+
+def menu_inicio(monedas, datos):
+    while True:
+        opcion = str(input("""
+        ------------------------------------
+        Eligue una opción
+        (1) Cambiar de base
+        (2) Introducir Monedas
+        (3) Salir
+        ------------------------------------
+        """))
+        if opcion == '1':
+            monedas, datos = con.conseguir_datos()
+
+        elif opcion == '2':
+            lista_mon = con.monedas_elegidas(monedas)
+            menu_introducir_monedas(monedas, datos, lista_mon)
+            break
+        
+        elif opcion == '3':
+            print("----------¡Hasta luego!----------")
+            return
+
+        else:
+            print("Opción no valida")
 
 def menu_introducir_monedas(monedas, datos, lista_mon):
     while True:
@@ -65,31 +89,6 @@ def menu_introducir_monedas(monedas, datos, lista_mon):
                     print("Opción no valida")          
     
         elif opcion_01 == "7":
-            print("----------¡Hasta luego!----------")
-            return
-
-        else:
-            print("Opción no valida")
-
-def menu_inicio(monedas, datos):
-    while True:
-        opcion = str(input("""
-        ------------------------------------
-        Eligue una opción
-        (1) Cambiar de base
-        (2) Introducir Monedas
-        (3) Salir
-        ------------------------------------
-        """))
-        if opcion == '1':
-            monedas, datos = con.conseguir_datos()
-
-        elif opcion == '2':
-            lista_mon = con.monedas_elegidas(monedas)
-            menu_introducir_monedas(monedas, datos, lista_mon)
-            break
-        
-        elif opcion == '3':
             print("----------¡Hasta luego!----------")
             return
 
