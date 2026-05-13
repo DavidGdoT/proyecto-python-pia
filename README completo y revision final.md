@@ -27,4 +27,4 @@ la tercera gráfica muestra las primeras monedas de menor a mayor según la cant
 
 ## Lo que aprendimos 
 
-Aprendi a utilizar menus y funciones recursivas demás de utilizar matplot para crear las graficas, requestes para sacar información de apis y a manipular esos datos con json para crear bilbitecas y poder utilizar esa información con facilidad al manipular las biblitecas y utilizar lo que convenga en cada parte del codigo.
+Aprendi a utilizar menus y funciones recursivas demás de utilizar matplot para crear las graficas, requestes para sacar información de apis y a manipular esos datos con json para crear bilbitecas y poder utilizar esa información con facilidad al manipular las biblitecas y utilizar lo que convenga en cada parte del codigo y por ultimo, la manera en la que shorted afecta en una lista dependiendo de las keys que se utilicen
