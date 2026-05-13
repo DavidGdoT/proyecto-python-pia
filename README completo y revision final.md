@@ -6,8 +6,11 @@ David Guajardo Treviño
 
 ## Documentos
 api_conexiones.py ---> data_api.py
+
 procesamiento.py ---> conversiones.py
+
 graficas.py ---> graficas.py
+
 main.py ---> main.py 
 
 ## ¿Qué hace este proyecto? 
