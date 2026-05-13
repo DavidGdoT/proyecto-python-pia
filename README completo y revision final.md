@@ -6,8 +6,7 @@ David Guajardo Treviño
 
 
 ## ¿Qué hace este proyecto? 
-Despliega un menú con diferentes opciónes, dejando al usuario elegir las monedas que quiera para sacar su conversión a otras momendas de todos los paises y con la posibilidad de generar
-graficas para tener una comparación visual de la diferencia en cuanto valor
+Despliega un menú con diferentes opciónes, dejando al usuario elegir las monedas que quiera para sacar su conversión a otras monendas de todos los paises y con la posibilidad de generar graficas para tener una comparación visual de la diferencia en cuanto valor
 
 
 
