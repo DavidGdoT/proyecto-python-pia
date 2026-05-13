@@ -20,9 +20,9 @@ Exchangerate - https://v6.exchangerate-api.com/v6/b6d737f0e4b316d91afd4e28/lates
 2. Ejecutar: python main.py 
 
 ## Gráficas generadas 
-La primera grafica la comparación de todas las monedas
-La segunda gráfica esa hecha principalmente para comparar monedas al azar
-la tercera gráfica se genera utilizando las monedas que el usuario introdujo
+La primera grafica la comparación de todas las monedas elegidas por el usuario
+La segunda gráfica muestra las primeras monedas de mayor a menor según la cantidad a mostrar que eliga el usuario
+la tercera gráfica muestra las primeras monedas de menor a mayor según la cantidad a mostrar que eliga el usuario
 
 
 
