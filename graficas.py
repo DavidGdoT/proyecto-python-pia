@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 
 def grafica_conversiones(lista_mon, mon_values):
     plt.plot(lista_mon, mon_values, marker="p")
+    plt.title("Comparación de monedas")
+    plt.xlabel("Monedas")
+    plt.ylabel("Valores")
     plt.savefig("grafica_conversiones.png")
     plt.show()
 
